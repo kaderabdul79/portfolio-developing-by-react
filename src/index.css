@@ -23,9 +23,12 @@ body{
     color: var(--color-white);
     line-height: 1.7;
 }
-
+/* .container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+} */
 /* general styles */
-.container{
+/* .container{
     width: var(--container-width-lg);
     margin: 0 auto;
 }
@@ -51,4 +54,4 @@ a:hover{
     width: max-content;
     display: inline-block;
     color: var(--color-primary);
-}
+} */
