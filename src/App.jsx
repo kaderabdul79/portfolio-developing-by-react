@@ -15,6 +15,7 @@ const App = () => {
             <BrowserRouter>
                 <Header></Header>
                 <Hero></Hero>
+                <About />
                  <Switch>
                     {/* <Route exact path="/"></Route> */}
                 </Switch>
