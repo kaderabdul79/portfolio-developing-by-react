@@ -10,14 +10,13 @@ import Portfolio from './components/portfolio/Portfolio';
 const App = () => {
     return (
         <div>
-            hello kader!
             <Header />
-            <Nav />
+            {/* <Nav />
             <Experience />
             <Portfolio />
             <About />
             <Contact />
-            <Footer />
+            <Footer /> */}
         </div>
     );
 };
