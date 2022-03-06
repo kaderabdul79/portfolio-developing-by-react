@@ -7,12 +7,14 @@ import Footer from './components/footer/Footer';
 import Nav from './components/nav/Nav';
 import Portfolio from './components/portfolio/Portfolio';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Hero from './components/hero/Hero';
 
 const App = () => {
     return (
         <div>
             <BrowserRouter>
                 <Header></Header>
+                <Hero></Hero>
                  <Switch>
                     {/* <Route exact path="/"></Route> */}
                 </Switch>
