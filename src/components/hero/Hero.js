@@ -19,9 +19,9 @@ const Hero = () => {
                         <div className="desc">Aaddress:<span>408/1, Kuratoli,Kuril Bishwa Road.</span></div>
                     </div>
                     <div className="media-container">
-                    <li><FaFacebookF /></li>
-                    <li><FaLinkedinIn /></li>
                     <li><FaGithub /></li>
+                    <li><FaLinkedinIn /></li>
+                    <li><FaFacebookF /></li>
                 </div>
                 </div>
             </div>
