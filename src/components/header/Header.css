@@ -1,0 +1,50 @@
+.header-area{
+    
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6;
+    padding: 5px 100px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,120,1) 35%, rgba(0,212,255,1) 100%);
+    z-index: 999;
+}
+header.sticky{
+    padding: 5px 100px;
+    /* background-color: rgb(252, 2, 2); */
+}
+.logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6;
+}
+.nav-area{
+
+}
+.nav-area ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-area ul li{
+    position: relative;
+}
+.nav-area ul li a{
+    position: relative;
+    margin: 0 15px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
