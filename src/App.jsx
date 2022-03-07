@@ -1,4 +1,5 @@
 import React from 'react';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
