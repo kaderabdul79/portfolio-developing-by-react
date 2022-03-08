@@ -12,7 +12,12 @@
     width: 30%;
 }
 .about-title{
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+    font-size: 64px;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color: rgba(0,0,0,.863);
+    
 }
 .download-cv{
     background-color: #04A5BA;
