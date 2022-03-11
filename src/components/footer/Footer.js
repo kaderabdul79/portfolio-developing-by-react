@@ -21,6 +21,11 @@ const Footer = () => {
             // console.log(error.text);
         });
     }
+        // recv the url and replace the current url which social media wants to check
+        function visitSocialAcc(url) {
+            // console.log(url)
+            window.location.replace(`${url}`)
+        }
     return (
         <div className='footer-area' id="contact">
             <div className="footer_heading">Get in touch_</div>
@@ -47,24 +52,24 @@ const Footer = () => {
             </dl>
             <dl>
                 <dt>ADDRESS:</dt>
-                <dd>408/1, Kuratoli,Kuril Bishwa Road.</dd>
+                <dd>Ka-93-D, Kuratoli,Kuril Bishwa Road.</dd>
             </dl>
             </div>
             <div className="contact-media">
             <dl>
-                <Link to="">
+                <Link onClick={() => visitSocialAcc('https://github.com/kaderabdul79')} to="">
                 <dt><FaGithub /></dt>
                 <dd>Github</dd>
                 </Link>
             </dl>
             <dl>
-                <Link to="">
+                <Link onClick={() => visitSocialAcc('https://www.linkedin.com/in/kader-abdul/')} to="">
                 <dt><FaLinkedinIn /></dt>
                 <dd>Linkedin</dd>
                 </Link>
             </dl>
             <dl>
-                <Link to="">
+                <Link onClick={() => visitSocialAcc('https://www.facebook.com/kaderabdulakd/')} to="">
                 <dt><FaFacebookF /></dt>
                 <dd>Facebook</dd>
                 </Link>

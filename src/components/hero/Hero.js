@@ -3,8 +3,14 @@ import './Hero.css';
 import myimg from '../../assets/myimg.jpg';
 import { Col, Container, Row } from 'react-bootstrap';
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaArrowRight } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
+    // recv the url and replace the current url which social media wants to check
+    function visitSocialAcc(url) {
+        // console.log(url)
+        window.location.replace(`${url}`)
+    }
     return (
         <div className='hero-area'>
             <div className="hero">
@@ -27,13 +33,13 @@ const Hero = () => {
                     </dl>
                     <dl>
                         <dt>ADDRESS:</dt>
-                        <dd>408/1, Kuratoli,Kuril Bishwa Road.</dd>
+                        <dd>Ka-93-D, Kuratoli,Kuril Bishwa Road.</dd>
                     </dl>
                 </div>
                     <div className="media-container">
-                    <li><FaGithub /></li>
-                    <li><FaLinkedinIn /></li>
-                    <li><FaFacebookF /></li>
+                    <li><Link onClick={() => visitSocialAcc('https://github.com/kaderabdul79')} to=""><FaGithub /></Link></li>
+                    <li><Link onClick={() => visitSocialAcc('https://www.linkedin.com/in/kader-abdul/')} to=""><FaLinkedinIn /></Link></li>
+                    <li><Link onClick={() => visitSocialAcc('https://www.facebook.com/kaderabdulakd/')} to=""><FaFacebookF /></Link></li>
                 </div>
                 </div>
             </div>

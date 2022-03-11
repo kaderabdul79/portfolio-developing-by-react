@@ -50,7 +50,7 @@
 .media-container{
     display: flex;
 }
-.media-container li{
+.media-container li a{
     margin-right: 15px;
     color: #01CBF2;
     transition: .3s;
@@ -59,7 +59,7 @@
     border-radius: 8px;
     transition: .3s;
 }
-.media-container li:hover{
+.media-container li a:hover{
     color: #fff;
 }
 
