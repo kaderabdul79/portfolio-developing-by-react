@@ -1,19 +1,37 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import './Footer.css';
 import { FaFacebookF, FaGithub, FaLinkedinIn} from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
 
 const Footer = () => {
+    const contactData = useRef()
+    const [success,setSuccess] = useState("")
+    const [error,setError] = useState("")
+    // 
+    const sendToEmail = (e) => {
+        e.preventDefault()
+        // 
+        emailjs.sendForm('service_4zusb9b', 'template_yby2xfm', e.target, 'LOdxy6ZOXWp_-5Olj')
+        .then((result) => {
+            setSuccess("Thanks for write to me!")
+            // console.log(result.text);
+        }, (error) => {
+            setError(error.text)
+            // console.log(error.text);
+        });
+    }
     return (
         <div className='footer-area' id="contact">
             <div className="footer_heading">Get in touch_</div>
             <div className="foo">
-            <div className="contact-form">
-                <input type="text" id="fname" name="firstname" placeholder="Your name.." />
-                <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
-                <textarea id="subject" name="subject" placeholder="Write something.." style={{height: '100px'}} />
+            <form className="contact-form" ref={contactData} onSubmit={sendToEmail}>
+                <input type="text" id="name" name="name" placeholder="Your name" />
+                <input type="email" id="email" name="email" placeholder="Your email" />
+                <textarea id="message" name="message" placeholder="Write something.." style={{height: '100px'}} />
                 <input type="submit" value="Submit" />
-            </div>
+                <br />{ success ? <span style={{color: '#fff'}}>{success}</span> : <span>{error}</span>}
+            </form>
             <div className="contact-info">
             <dl>
                 <dt>PHONE:</dt>
