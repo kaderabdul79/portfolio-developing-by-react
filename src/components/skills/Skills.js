@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Skills.css';
 
 const Skills = () => {
     const skills = [
         {
-            name: "TypeScript",
-            id: "typescript",
-            img: "https://blog.syncfusion.com/wp-content/uploads/2018/08/ts_tile.png",
+            name: "Javascript",
+            id:"javascript",
+            img: "https://cdn-ssl-devio-img.classmethod.jp/wp-content/uploads/2020/04/javascript-960x504.png",
         },
         {
             name: "React",
@@ -14,9 +15,14 @@ const Skills = () => {
             img: "https://dtmvamahs40ux.cloudfront.net/gl-academy/course/course-508-reactjs.jpg",
         },
         {
-            name: "Redux",
-            id: "redux",
-            img: "https://chriscourses.com/img/blog/redux/redux.jpg",
+            name: "Php",
+            id: "php",
+            img: "https://heera.it/wp-content/uploads/2013/06/php-leader.png",
+        },
+        {
+            name: "Laravel",
+            id: "laravel",
+            img: "https://laravelnews.imgix.net/images/laravel-featured.png?ixlib=php-3.3.1",
         },
         {
             name: "Node",
@@ -38,27 +44,28 @@ const Skills = () => {
             id: "mysql",
             img: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ0DBkyBH8Xk41fW9jmSxidUCEHaQo0XAR_Ezr1R1LEBjkxPQwR&usqp=CAU",
         },
-        {
-            name: "Php",
-            id: "php",
-            img: "https://heera.it/wp-content/uploads/2013/06/php-leader.png",
-        },
-        {
-            name: "Laravel",
-            id: "laravel",
-            img: "https://laravelnews.imgix.net/images/laravel-featured.png?ixlib=php-3.3.1",
-        },
+        // {
+        //     name: "TypeScript",
+        //     id: "typescript",
+        //     img: "https://blog.syncfusion.com/wp-content/uploads/2018/08/ts_tile.png",
+        // },
+        // {
+        //     name: "Redux",
+        //     id: "redux",
+        //     img: "https://chriscourses.com/img/blog/redux/redux.jpg",
+        // },
+
     ]
 
     return (
-        <div className="skills-area">
+        <div className="skills-area" id="skills">
             <div className="skills-title">MY SKILLS</div>
             <p>Okay, sufficient of me describing myself to you,visitor. It's high time for you to check out my skills! Tap on a card and you'll get a brief description of what I know almost that specific technology.</p>
                 <div className="skill-container">
                 {
                     skills.map(skill => (
-                        <a className="skill-box" key={skill.id} href="skillsimagelink"><img src={skill.img} alt="skillsimage" /></a>
-                        ))
+                        <Link to={`/skills/${skill.id}`} className="skill-box" key={skill.id}><img src={skill.img} alt="skillsimage" /></Link>
+                    ))
                 }
                 </div>
         </div>

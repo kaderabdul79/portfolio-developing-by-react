@@ -28,8 +28,8 @@ header.sticky{
     letter-spacing: 2px;
     transition: 0.6;
 }
-.nav-area{
-
+.logo a{
+    color: #fff;
 }
 .nav-area ul{
     position: relative;

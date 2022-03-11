@@ -1,8 +1,9 @@
 .skills-area{
     padding: 0 100px;
+    margin-top: 20px;
 }
 .skills-title {
-    font-size: 64px;
+    font-size: 45px;
     text-transform: uppercase;
     letter-spacing: .3rem;
     color: rgba(0,0,0,.863);
@@ -17,7 +18,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 75px;
-    margin-bottom: 90px;skillsimage
+    margin-bottom: 90px;
 }
 .skill-box{
     width: 300px;

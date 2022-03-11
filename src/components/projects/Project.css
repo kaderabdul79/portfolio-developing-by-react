@@ -1,0 +1,74 @@
+.projects-area{
+    padding: 0 100px;
+}
+.projects-title{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: rgba(0,0,0,.863);
+    margin-bottom: 20px;
+}
+.Project {
+    margin-top: 60px;
+}
+.Project__container {
+    text-align: center;
+    color: #111010;
+}
+.Project__heading {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.Project__line {
+    height: .25rem;
+    background-color: rgba(0,0,0,.61);
+    width: 7rem;
+    margin: 1rem auto 0;
+}
+.Project__description {
+    font-size: 18px;
+    width: 45%;
+    margin: 45px auto 0;
+}
+.Project__description + img{
+    padding: 8px;
+    border: 1px solid rgb(122, 112, 112);;
+}
+.Project__btn-container {
+    width: 100%;
+    margin: 16px auto 0;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.learnmore-btn,.visitwebsite-btn {
+    background-color: #04A5BA;
+    height: 50px;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 15px;
+    min-width: 170px;
+    text-align: center;
+    display: inline-block;
+    color: #fff!important;
+    font-weight: 600;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s;
+}
+.visitwebsite-btn{
+    background-color: #064252;
+}
+.learnmore-btn:hover{
+    background-color: #01CDF4;
+}
+.visitwebsite-btn:hover{
+    background-color: #04A5BA;
+}
+
+
+
+
+

@@ -10,14 +10,26 @@ const Hero = () => {
             <div className="hero">
                 <div className="hero-left"><img src={myimg} alt="" /></div>
                 <div className="hero-right">
-                    <h1>Abdul Kader</h1>
-                    <p>Data Science Enthusiast, Web Developer</p>
-                    <div className="description">
-                        <div className="desc">Age:<span>24years</span></div>
-                        <div className="desc">Phone:<span>+88 018 5575 9092</span></div>
-                        <div className="desc">Email:<span>kaderabdul7980@gmail.com</span></div>
-                        <div className="desc">Aaddress:<span>408/1, Kuratoli,Kuril Bishwa Road.</span></div>
-                    </div>
+                    <h1 style={{letterSpacing: '3px'}}>Abdul Kader</h1>
+                    <p>Looking for Junior Software Engineer or Web Developer (position)</p>
+                <div className="contact-info">
+                    <dl>
+                        <dt>Age:</dt>
+                        <dd>24y</dd>
+                    </dl>
+                    <dl>
+                        <dt>Phone:</dt>
+                        <dd>+88 018 5575 9092</dd>
+                    </dl>
+                    <dl>
+                        <dt>EMAIL:</dt>
+                        <dd>kaderabdul7980@gmail.com</dd>
+                    </dl>
+                    <dl>
+                        <dt>ADDRESS:</dt>
+                        <dd>408/1, Kuratoli,Kuril Bishwa Road.</dd>
+                    </dl>
+                </div>
                     <div className="media-container">
                     <li><FaGithub /></li>
                     <li><FaLinkedinIn /></li>

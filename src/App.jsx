@@ -1,21 +1,25 @@
 import React from 'react';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import About from './components/about/About';
 import Header from './components/header/Header';
-import Hero from './components/hero/Hero';
-import Skills from './components/skills/Skills';
+import Home from './pages/Home';
+import ProjectDetails from './pages/projectDetails/ProjectDetails';
+import SkillDetails from './pages/skillDetails/SkillDetails';
 
 const App = () => {
     return (
         <div>
             <BrowserRouter>
-            <Header></Header>
-            <Hero></Hero>
-            <About></About>
-            <Skills></Skills>
-                 <Switch>
-                    {/* <Route exact path="/"></Route> */}
+                <Header></Header>
+                <Switch>
+                    <Route exact path="/">
+                        <Home></Home>
+                    </Route>
+                    <Route path="/projects/:id">
+                        <ProjectDetails></ProjectDetails>
+                    </Route>
+                    <Route path="/skills/:id">
+                        <SkillDetails></SkillDetails>
+                    </Route>
                 </Switch>
             </BrowserRouter>
         </div>

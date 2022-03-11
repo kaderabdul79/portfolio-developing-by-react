@@ -1,18 +1,20 @@
 import React from 'react';
 import './Header.css';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+// import {Link} from "react-scroll";
+import { NavHashLink,HashLink as Link } from 'react-router-hash-link';
 
 const Header = () => {
     return (
         <div className='header-area'>
             <header>
-                <div className="logo"><a href="">Home</a></div>
+                <div className="logo"><Link to="/">Hello</Link></div>
                 <div className="nav-area">
                     <ul>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Skills</a></li>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><Link to="#about" smooth>About</Link></li>
+                        <li><Link to="#skills" smooth>Skills</Link></li>
+                        <li><Link to="#projects" smooth>Projects</Link></li>
+                        <li><Link to="#contact" smooth>Contact</Link></li>
                     </ul>
                 </div>
             </header>

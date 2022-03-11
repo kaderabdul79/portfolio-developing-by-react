@@ -13,11 +13,10 @@
 }
 .about-title{
     margin-bottom: 35px;
-    font-size: 64px;
+    font-size: 54px;
     text-transform: uppercase;
     letter-spacing: .3rem;
     color: rgba(0,0,0,.863);
-    
 }
 .download-cv{
     background-color: #04A5BA;
@@ -34,6 +33,9 @@
     font-weight: 600;
     overflow: hidden;
     cursor: pointer;
+}
+.download-cv a{
+    color: #fff;
 }
 .download-cv:hover{
     background-color: #01C9EF;
