@@ -16,7 +16,7 @@
     display: inline-block;
     margin-top: 15px;
     text-decoration: none;
-    background-color: rgba(20,20,20,.788);
+    background-color: #07535E;
     padding: 14px 18px;
     color: #fbfcd5;
     font-size: 16px;
@@ -24,4 +24,9 @@
     letter-spacing: 6px;
     font-weight: 700;
     text-transform: uppercase;
+    transition: .3s;
 }
+.go-back:hover{
+    background-color: #06929D;
+}
+

@@ -12,18 +12,5 @@
 .ProjectDetails_sub-header {
     font-size: 32px;
 }
-.go-back {
-    display: inline-block;
-    margin-top: 15px;
-    text-decoration: none;
-    background-color: rgba(20,20,20,.788);
-    padding: 14px 18px;
-    color: #fbfcd5;
-    font-size: 16px;
-    border-radius: 8px;
-    letter-spacing: 6px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
 
 
