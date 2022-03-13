@@ -21,7 +21,7 @@ const Hero = () => {
                 <div className="contact-info">
                     <dl>
                         <dt>Age:</dt>
-                        <dd>24y</dd>
+                        <dd>23y</dd>
                     </dl>
                     <dl>
                         <dt>Phone:</dt>
