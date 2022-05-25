@@ -40,7 +40,7 @@ const Footer = () => {
             <div className="contact-info">
             <dl>
                 <dt>PHONE:</dt>
-                <dd>+88 018 5575 9092</dd>
+                <dd>+88 018 7518 7195</dd>
             </dl>
             <dl>
                 <dt>SKYPE:</dt>

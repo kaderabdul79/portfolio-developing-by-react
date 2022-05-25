@@ -25,7 +25,7 @@ const Hero = () => {
                     </dl>
                     <dl>
                         <dt>Phone:</dt>
-                        <dd>+88 018 5575 9092</dd>
+                        <dd>+88 018 7518 7195</dd>
                     </dl>
                     <dl>
                         <dt>EMAIL:</dt>
