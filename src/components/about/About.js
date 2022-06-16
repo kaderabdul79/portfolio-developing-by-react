@@ -14,7 +14,7 @@ const About = () => {
             <div className="about-left">
                 <p>I am an industrious , self-motivated Software Engineer with excellent knowledge. I have already completed BSc in Computer Science & Engineering . As a Computer Science Graduate ,I have a strong Programming knowledge Which I want to utilize a company where also I will get opportunity to learning and sharing knowledge.</p>
                 <p>I am Passionate about learning and staying up to date with the latest technologies & a clear communicator.</p>
-                <div className="download-cv"><Link  onClick={() => downloadCV('https://drive.google.com/file/d/1i3HJxMQ4WlUTNMi7jBB1eelX4dsoesLm/view?usp=sharing')} to="">download cv<FaDownload /></Link></div>
+                <div className="download-cv"><Link  onClick={() => downloadCV('https://drive.google.com/file/d/1MngdSJ6Nf8GZClSJn4fGU0Abj_EANnGt/view?usp=sharing')} to="">download cv<FaDownload /></Link></div>
             </div>
             <div className="about-right">
             </div>
